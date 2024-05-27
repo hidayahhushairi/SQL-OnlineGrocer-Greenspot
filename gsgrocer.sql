@@ -122,3 +122,10 @@ SELECT itemName, itemUnit, itemLocation, itemID, COUNT(*) AS num_restock
 FROM item
 GROUP BY itemName, itemUnit, itemLocation, itemID;
 
+/* 5. Connect all three tables to identify the overview of business */
+SELECT vendor.vendorLocation, vendor.vendorCost, vendor.purchaseDate, item.itemID, item.itemQtyreceive, item.itemPrice,
+item.itemUnit, customer.customerID, customer.customerQty, customer.soldDate
+FROM vendor
+INNER JOIN item ON vendor.vendorID = item.numID
+INNER JOIN customer ON item.numID = customer.numberID;
+
