@@ -13,6 +13,9 @@ Database Design Tool: MYSQL WORKBENCH 8.0 CE
 - The sample database was created in a.CSV file. Vendors, items, and customer data are stored in a table. As business and data processes are conducted invariably, business is prone to data entry errors,
 measurement inaccuracies, or unexpected events. Consequentially, the file format has affected data quality with anomalies such as missing or extra delimiters, missmatched quotation marks, and unescaped line breaks.
 Entity Relationship Diagram (EER) helps to address this issue by identifying relevant entities, attributes, and group relationships within the system for efficient placement.
+
+  ![erd_greenspotgrocer](https://github.com/hidayahhushairi/SQL-OnlineGrocer-Greenspot/assets/106440459/bd49001a-805f-4443-9302-ded68c846822)
+
 #### Database Creation:
 - Data Definition Language (DDL) defines access rights to database objects, such as tables and indexes. A CREATE DATABASE statement is used to create a database. 
 This next crucial part involves table creation by defining the columns for each table and setting appropriate data types. 
